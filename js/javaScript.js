@@ -3,8 +3,7 @@ let header_burger = document.querySelector(".header_burger");
 let back = document.querySelector('body');
 
 
-header_burger.onclick = function(){
-    
+header_burger.onclick = function(){    
     header_burger.classList.toggle("active");
     back.classList.toggle('lock');
 };
@@ -38,8 +37,20 @@ item.addEventListener('click', function (e) {
 }));
 
  document.querySelector('.tabs_triggers_item').click();
- 
-/*  slider */
+
+
+                 /* section FAQ  */
+
+    document.querySelectorAll('.faq_question_li').forEach((item) =>
+    item.addEventListener('click', function (a) {
+        a.preventDefault();
+        document.querySelectorAll('.faq_question_li').forEach(
+            (child) => child.classList.remove('faq_active')        
+        );
+         item.classList.toggle('faq_active')})         
+    );
+    document.querySelector('.faq_question_li').click();
+                /*  slider */
  let dots = 4;
       let sliderElem = document.querySelector(".slider");
       let dotElems = sliderElem.querySelectorAll(".slider__dot");

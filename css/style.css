@@ -746,8 +746,8 @@ body {
   border-radius: 8px;
 }
 .tabs_triggers_item {
-  padding-top: 15px;
-  padding-left: 25px;
+  padding: 15px 0 0 25px;
+  
   text-decoration: none;
   text-align: center;
   flex: 0 1 33.333333%;
@@ -1268,6 +1268,15 @@ body {
 }
 .faq_question_list li {
   margin-bottom: 20px;
+}
+.faq_question_li {
+cursor: pointer;
+}
+.faq_question_li:hover {
+  font-weight: 550;
+}
+.faq_active {
+font-weight: 700;
 }
 .faq_body_answer {
   height: 337px;
